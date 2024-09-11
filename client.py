@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 def start_client(host, port):
 #inicia o cliente TCP
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client.settimeout(5)
+    client.settimeout(10)
 
     try:
         client.connect((host, port))
