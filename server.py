@@ -58,3 +58,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     start_server(args.host, args.port)
+
+# python server.py --host 192.168.0.100 --port 8080
